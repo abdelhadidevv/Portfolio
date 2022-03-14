@@ -5,7 +5,8 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./themes.js";
 import Navbar from "./components/Navbar";
 import AnimatedRoutes from "./components/AnimatedRoutes";
-
+import { Helmet } from "react-helmet";
+import logo from "./assets/logo.png";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
@@ -26,6 +27,11 @@ export default function App() {
     <ThemeProvider theme={theme ? darkTheme : lightTheme}>
       <GlobalStyles />
       <div className="app">
+        <Helmet>
+          <meta property="og:site_name" content="Abd Elhaid - Home" />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content={logo} />
+        </Helmet>
         <Router>
           <Navbar themeToggler={themeToggler} theme={theme} />
           <ScrollToTop />
