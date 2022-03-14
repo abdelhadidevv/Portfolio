@@ -17,25 +17,25 @@ function Works() {
           <ProjectLink
             img={ReactJSImg}
             title="React JS"
-            subTitle="Laren react js"
+            subTitle="Learn react js"
             isWork={true}
           />
           <ProjectLink
             img={ReduxJsImg}
             title="Node JS"
-            subTitle="Laren node js"
+            subTitle="Learn node js"
             isWork={true}
           />
           <ProjectLink
             img={ReduxJsImg}
             title="React JS"
-            subTitle="Laren react js"
+            subTitle="Learn react js"
             isWork={true}
           />
           <ProjectLink
             img={ReactJSImg}
             title="Node JS"
-            subTitle="Laren node js"
+            subTitle="Learn node js"
             isWork={true}
           />
         </div>
@@ -45,13 +45,13 @@ function Works() {
           <ProjectLink
             img={ReactJSImg}
             title="React JS"
-            subTitle="Laren react js"
+            subTitle="Learn react js"
             isWork={true}
           />
           <ProjectLink
             img={ReduxJsImg}
             title="Node JS"
-            subTitle="Laren node js"
+            subTitle="Learn node js"
             isWork={true}
           />
         </div>
@@ -62,19 +62,19 @@ function Works() {
           <ProjectLink
             img={ReduxJsImg}
             title="React JS"
-            subTitle="Laren react js"
+            subTitle="Learn react js"
             isWork={true}
           />
           <ProjectLink
             img={ReactJSImg}
             title="Node JS"
-            subTitle="Laren node js"
+            subTitle="Learn node js"
             isWork={true}
           />
           <ProjectLink
             img={ReactJSImg}
             title="React JS"
-            subTitle="Laren react js"
+            subTitle="Learn react js"
             isWork={true}
           />
         </div>

@@ -72,22 +72,22 @@ function Home() {
             <SocialItem
               icon={<IoLogoGithub className="social-icon" />}
               link="https://www.github.com/"
-              user="@abd_elhaid"
+              user="@abd_elhadi"
             />
             <SocialItem
               icon={<BsInstagram />}
               link="https://www.instagram.com/"
-              user="@abd_elhaid"
+              user="@abd_elhadi"
             />
             <SocialItem
               icon={<BsFacebook />}
               link="https://www.facebook.com/"
-              user="@abd_elhaid"
+              user="@abd_elhadi"
             />
             <SocialItem
               icon={<AiOutlineTwitter />}
               link="https://www.twitter.com/"
-              user="@abd_elhaid"
+              user="@abd_elhadi"
             />
           </ul>
         </div>
@@ -95,12 +95,12 @@ function Home() {
           <ProjectLink
             img={ReactJSImg}
             title="React JS"
-            subTitle="Laren react js"
+            subTitle="Learn react js"
           />
           <ProjectLink
             img={ReduxJsImg}
             title="Node JS"
-            subTitle="Laren node js"
+            subTitle="Learn node js"
           />
         </div>
         <button className="portfolio-btn" style={{ marginBottom: "0px" }}>
