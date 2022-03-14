@@ -82,7 +82,7 @@ function Navbar({ themeToggler, theme }) {
             </div>
 
             <div className="dark-mode" onClick={() => themeToggler()}>
-              {theme === "light" ? <MdDarkMode /> : <ImSun />}
+              {theme ? <ImSun /> : <MdDarkMode />}
             </div>
           </div>
         </div>
