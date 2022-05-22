@@ -34,7 +34,7 @@ function Home() {
         <div className="work-describe">
           <p className="section-title">Work</p>
           <p className="describe-text">
-            Hello my name Abd Elhadi and I am 21 years ago and I am an android
+            Hello my name Abd Elhadi and I am 22 years ago and I am an android
             developer and I start to learn React JS,I want to become
             Full-Stack-Developer with React end of the 2022.
           </p>
