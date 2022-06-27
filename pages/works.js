@@ -1,7 +1,7 @@
 import "../styles/Works.css";
 import ProjectLink from "../components/ProjectLink";
-import ReactJSImg from "../assets/react.jpg";
-import ReduxJsImg from "../assets/redux.jpg";
+import ReactJSImg from "../public/images/react.jpg";
+import ReduxJsImg from "../public/images/redux.jpg";
 import LayoutAimate from "../components/LayoutAimate";
 
 function Works() {
@@ -75,6 +75,42 @@ function Works() {
           />
         </div>
       </div>
+      <style jsx>{`
+        .works {
+          width: 100%;
+          margin-top: 20px;
+        }
+
+        .works-projects {
+          width: 100%;
+          display: grid;
+          grid-gap: 24px;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .works-title {
+          margin-bottom: 16px;
+          font-size: 20px;
+          font-family: "M PLUS Rounded 1c";
+        }
+
+        .divider {
+          opacity: 0.6;
+          border-width: 0px 0px 1px;
+          border-image: initial;
+          border-color: inherit;
+          border-style: solid;
+          width: 100%;
+          margin-top: 24px;
+          margin-bottom: 24px;
+        }
+
+        @media (max-width: 480px) {
+          .works-projects {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+          }
+        }
+      `}</style>
     </LayoutAimate>
   );
 }

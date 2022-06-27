@@ -1,8 +1,6 @@
 import { AnimatePresence } from "framer-motion";
 
 const AnimatedRoutes = () => {
-  const location = useLocation();
-
   return (
     <AnimatePresence
       exitBeforeEnter
@@ -12,8 +10,7 @@ const AnimatedRoutes = () => {
           window.scrollTo({ top: 0 });
         }
       }}
-    >
-    </AnimatePresence>
+    ></AnimatePresence>
   );
 };
 export default AnimatedRoutes;

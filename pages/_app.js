@@ -1,7 +1,14 @@
 import "../styles/globals.css";
+import MainLayout from "../components/layout/main-layout";
+import Fonts from "../components/fonts";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function Website({ Component, pageProps, router }) {
+  return (
+    <MainLayout router={router}>
+      <Fonts />
+      <Component {...pageProps} key={router.route} />
+    </MainLayout>
+  );
 }
 
-export default MyApp;
+export default Website;
