@@ -1,7 +1,5 @@
 import PostItem from "../components/PostItem";
 import LayoutAimate from "../components/LayoutAimate";
-import ReactJSImg from "../public/images/react.jpg";
-import ReduxJsImg from "../public/images/redux.jpg";
 
 function Posts() {
   return (
@@ -9,12 +7,12 @@ function Posts() {
       <div className="posts">
         <h3 className="posts-title">Popular Posts</h3>
         <div className="posts-projects">
-          <PostItem img={ReactJSImg} title="React JS" />
-          <PostItem img={ReduxJsImg} title="Redux JS" />
-          <PostItem img={ReduxJsImg} title="React JS" />
-          <PostItem img={ReactJSImg} title="Redux JS" />
-          <PostItem img={ReactJSImg} title="React JS" />
-          <PostItem img={ReduxJsImg} title="Redux JS" />
+          <PostItem img="/images/react.jpg" title="React JS" />
+          <PostItem img="/images/redux.jpg" title="Redux JS" />
+        <PostItem img="/images/react.jpg" title="React JS" />
+          <PostItem img="/images/redux.jpg" title="Redux JS" />
+        <PostItem img="/images/react.jpg" title="React JS" />
+          <PostItem img="/images/redux.jpg" title="Redux JS" />
         </div>
       </div>
       <style jsx>{`

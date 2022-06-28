@@ -1,9 +1,8 @@
-import "../styles/Works.css";
 import ProjectLink from "../components/ProjectLink";
 import ReactJSImg from "../public/images/react.jpg";
 import ReduxJsImg from "../public/images/redux.jpg";
 import LayoutAimate from "../components/LayoutAimate";
-
+ 
 function Works() {
   return (
     <LayoutAimate title="works">
@@ -11,25 +10,25 @@ function Works() {
         <h3 className="works-title">Works</h3>
         <div className="works-projects">
           <ProjectLink
-            img={ReactJSImg}
+            img="/images/react.jpg"
             title="React JS"
             subTitle="Learn react js"
             isWork={true}
           />
           <ProjectLink
-            img={ReduxJsImg}
+            img="/images/redux.jpg" 
             title="Node JS"
             subTitle="Learn node js"
             isWork={true}
           />
-          <ProjectLink
-            img={ReduxJsImg}
+      <ProjectLink
+            img="/images/react.jpg"
             title="React JS"
             subTitle="Learn react js"
             isWork={true}
           />
           <ProjectLink
-            img={ReactJSImg}
+            img="/images/redux.jpg" 
             title="Node JS"
             subTitle="Learn node js"
             isWork={true}
@@ -38,14 +37,14 @@ function Works() {
         <hr className="divider" />
         <h3 className="works-title">Collaborations</h3>
         <div className="works-projects">
-          <ProjectLink
-            img={ReactJSImg}
+ <ProjectLink
+            img="/images/react.jpg"
             title="React JS"
             subTitle="Learn react js"
             isWork={true}
           />
           <ProjectLink
-            img={ReduxJsImg}
+            img="/images/redux.jpg" 
             title="Node JS"
             subTitle="Learn node js"
             isWork={true}
@@ -55,24 +54,25 @@ function Works() {
 
         <h3 className="works-title">Old works</h3>
         <div className="works-projects">
-          <ProjectLink
-            img={ReduxJsImg}
+         <ProjectLink
+            img="/images/react.jpg"
             title="React JS"
             subTitle="Learn react js"
             isWork={true}
           />
           <ProjectLink
-            img={ReactJSImg}
+            img="/images/redux.jpg" 
             title="Node JS"
             subTitle="Learn node js"
             isWork={true}
           />
-          <ProjectLink
-            img={ReactJSImg}
+ <ProjectLink
+            img="/images/react.jpg"
             title="React JS"
             subTitle="Learn react js"
             isWork={true}
           />
+
         </div>
       </div>
       <style jsx>{`

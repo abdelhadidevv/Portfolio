@@ -3,7 +3,6 @@ import { BsInstagram, BsFacebook } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { IoLogoGithub } from "react-icons/io5";
 import ProjectLink from "../components/ProjectLink";
-import SocialItem from "../components/social-item";
 import LayoutAimate from "../components/LayoutAimate";
 
 function Home() {
@@ -164,7 +163,33 @@ function Home() {
           list-style-type: none;
         }
 
+        .social-item a {
+          text-decoration: none;
+        }
 
+        .social-item-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0px 16px;
+          height: 40px;
+          cursor: pointer;
+          font-weight: 600;
+          border-radius: 6px;
+          border: none;
+          background: none;
+        }
+
+        .username {
+          outline: transparent solid 2px;
+          outline-offset: 2px;
+          text-underline-offset: 3px;
+          margin-left: 9px;
+        }
+        .social-item-btn:hover .username {
+          text-decoration: underline;
+        }
 
         .section-title {
           text-decoration: underline 4px rgb(82, 82, 82);
@@ -267,8 +292,103 @@ function Home() {
 export default Home;
 
 const BioItem = ({ title, text }) => (
-  <div className="bio-item apple-font">
-    <span className="bio-item-title">{title}</span>
-    {text}
-  </div>
+  <>
+    <div className="bio-item apple-font">
+      <span className="bio-item-title">{title}</span>
+      {text}
+    </div>
+    <style jsx>{`
+      .apple-font {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        font-size: 16px;
+      }
+
+      .social-links ul {
+        list-style-type: none;
+      }
+
+      .social-item a {
+        text-decoration: none;
+      }
+
+      .social-item-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 16px;
+        height: 40px;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 6px;
+        border: none;
+        background: none;
+      }
+
+      .username {
+        outline: transparent solid 2px;
+        outline-offset: 2px;
+        text-underline-offset: 3px;
+        margin-left: 9px;
+      }
+      .social-item-btn:hover .username {
+        text-decoration: underline;
+      }
+    `}</style>
+  </>
+);
+
+const SocialItem = ({ icon, user, link }) => (
+  <>
+    <li className="social-item">
+      <a href={link} target="_blank" rel="noreferrer">
+        <button className="social-item-btn apple-font">
+          {icon}
+          <span className="username apple-font">{user}</span>
+        </button>
+      </a>
+    </li>
+    <style jsx>{`
+      .apple-font {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        font-size: 16px;
+      }
+
+      .social-links ul {
+        list-style-type: none;
+      }
+
+      .social-item a {
+        text-decoration: none;
+      }
+
+      .social-item-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 16px;
+        height: 40px;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 6px;
+        border: none;
+        background: none;
+      }
+
+      .username {
+        outline: transparent solid 2px;
+        outline-offset: 2px;
+        text-underline-offset: 3px;
+        margin-left: 9px;
+      }
+      .social-item-btn:hover .username {
+        text-decoration: underline;
+      }
+    `}</style>
+  </>
 );

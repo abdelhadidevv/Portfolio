@@ -4,20 +4,23 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "../themes.js";
 import Navbar from "../Navbar";
 import AnimatedRoutes from "../AnimatedRoutes";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 export default function MainLayout({ children }) {
-  const [theme, setTheme] =
-    useState();
-    // localStorage.getItem("dark-mode") === "true" ? true : false
+  const [theme, setTheme] = useState(null);  
+
+  useEffect(() => {
+   setTheme(localStorage.getItem("dark-mode")  === "true" ? true : false)
+  }, [theme]);
+
 
   const themeToggler = () => {
     if (theme === false) {
       setTheme(true);
-      // localStorage.setItem("dark-mode", true);
+      localStorage.setItem("dark-mode", true);
     } else if (theme === true) {
       setTheme(false);
-      // localStorage.setItem("dark-mode", false);
+      localStorage.setItem("dark-mode", false);
     }
   };
 
@@ -32,7 +35,7 @@ export default function MainLayout({ children }) {
       <ThemeProvider theme={theme ? darkTheme : lightTheme}>
         <GlobalStyles />
         <div className="app">
-          {/* <Navbar themeToggler={themeToggler} theme={theme} /> */}
+          <Navbar themeToggler={themeToggler} theme={theme} />
           {/* <ScrollToTop /> */}
           <div className="main">
             <AnimatedRoutes />
