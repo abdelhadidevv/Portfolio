@@ -109,7 +109,7 @@ function Home() {
           <Link href="/posts">
             <a className="apple-font">
 Popular posts <MdOutlineKeyboardArrowRight />
-<a/>
+</a>
             
           </Link>
         </button>
