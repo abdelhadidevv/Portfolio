@@ -12,7 +12,7 @@ function Home() {
     <LayoutAimate title="home">
       <div className="home">
         <div className="title apple-font">
-          Hello, I'm a new react developer based in Palestine!
+          Hello, I am a new react developer based in Palestine!
         </div>
         <div className="profile-container">
           <div className="skill-title">
