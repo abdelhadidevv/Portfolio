@@ -42,7 +42,7 @@ function Home() {
         <button className="portfolio-btn">
           <Link href="/works">
             
-              My portfolio <span>&nbsp;&nbsp;</span>
+              My portfolio 
               
             
           </Link>
