@@ -41,10 +41,10 @@ function Home() {
         </div>
         <button className="portfolio-btn">
           <Link href="/works">
-            <a className="apple-font">
+            
               My portfolio <span>&nbsp;&nbsp;</span>
-              <MdOutlineKeyboardArrowRight />
-            </a>
+              
+            
           </Link>
         </button>
         <div className="bio-describe">
@@ -107,9 +107,9 @@ function Home() {
         </div>
         <button className="portfolio-btn" style={{ marginBottom: "0px" }}>
           <Link href="/posts">
-            <a className="apple-font">
-Popular posts <MdOutlineKeyboardArrowRight />
-</a>
+            
+Popular posts 
+
             
           </Link>
         </button>
