@@ -13,7 +13,7 @@ function _404() {
         <br />
         <br />
         <button className="portfolio-btn">
-          <Link href="/" target="_self">
+          <Link href="/">
             <a className="apple-font"> Return to home</a>
           </Link>
         </button>
