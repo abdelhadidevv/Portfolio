@@ -2,6 +2,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BsInstagram, BsFacebook } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { IoLogoGithub } from "react-icons/io5";
+import getAge from "../lib/age";
 import ProjectLink from "../components/ProjectLink";
 import LayoutAimate from "../components/LayoutAimate";
 import Link from "next/link";
@@ -34,9 +35,9 @@ function Home() {
         <div className="work-describe">
           <p className="section-title">Work</p>
           <p className="describe-text">
-            Hello my name Abd Elhadi and I am 21 years ago and I am an android
-            developer and I start to learn React JS,I want to become
-            Full-Stack-Developer with React end of the 2022.
+            Hello my name Abd Elhadi and I am {getAge("2000-04-20")} years ago
+            and I am an android developer and I am an React JS developer, I want
+            to become Full-Stack-Developer with React end of the 2022.
           </p>
         </div>
         <button className="portfolio-btn">
