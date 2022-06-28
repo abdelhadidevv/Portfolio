@@ -1,4 +1,5 @@
 import LayoutAimate from "../components/LayoutAimate";
+import Link from "next/link";
 
 function _404() {
   return (
@@ -12,9 +13,9 @@ function _404() {
         <br />
         <br />
         <button className="portfolio-btn">
-          <a href="/" className="apple-font" target="_self">
-            Return to home
-          </a>
+          <Link href="/">
+            <a className="apple-font"> Return to home</a>
+          </Link>
         </button>
       </div>
     </LayoutAimate>

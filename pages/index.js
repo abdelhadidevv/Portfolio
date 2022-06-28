@@ -4,6 +4,8 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { IoLogoGithub } from "react-icons/io5";
 import ProjectLink from "../components/ProjectLink";
 import LayoutAimate from "../components/LayoutAimate";
+import Link from "next/link";
+import Image from "next/image";
 
 function Home() {
   return (
@@ -20,7 +22,13 @@ function Home() {
             </p>
           </div>
           <div className="profile-avatar">
-            <img src="./images/avatar.jpg" alt="" />
+            <Image
+              style={{ borderRadius: "50px", border: "white solid 2px" }}
+              width={100}
+              height={100}
+              src="/images/avatar.jpg"
+              alt=""
+            />
           </div>
         </div>
         <div className="work-describe">
@@ -32,10 +40,12 @@ function Home() {
           </p>
         </div>
         <button className="portfolio-btn">
-          <a href="/works" className="apple-font" target="_self">
-            My portfolio <span>&nbsp;&nbsp;</span>
-            <MdOutlineKeyboardArrowRight />
-          </a>
+          <Link href="/works">
+            <a className="apple-font">
+              My portfolio <span>&nbsp;&nbsp;</span>
+              <MdOutlineKeyboardArrowRight />
+            </a>
+          </Link>
         </button>
         <div className="bio-describe">
           <p className="section-title">Bio</p>
@@ -134,13 +144,6 @@ function Home() {
 
         .profile-avatar {
           display: inline;
-        }
-
-        .profile-avatar img {
-          width: 100px;
-          height: 100px;
-          border-radius: 50px;
-          border: white solid 2px;
         }
 
         .work-describe {
