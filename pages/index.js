@@ -3,10 +3,8 @@ import { BsInstagram, BsFacebook } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { IoLogoGithub } from "react-icons/io5";
 import ProjectLink from "../components/ProjectLink";
+import SocialItem from "../components/social-item";
 import LayoutAimate from "../components/LayoutAimate";
-import ReactJSImg from "../public/images/react.jpg";
-import ReduxJsImg from "../public/images/redux.jpg";
-import Avatar from "../public/images/avatar.jpg";
 
 function Home() {
   return (
@@ -23,7 +21,7 @@ function Home() {
             </p>
           </div>
           <div className="profile-avatar">
-            <img src={Avatar} alt="" />
+            <img src="./images/avatar.jpg" alt="" />
           </div>
         </div>
         <div className="work-describe">
@@ -88,12 +86,12 @@ function Home() {
         </div>
         <div className="project-links">
           <ProjectLink
-            img={ReactJSImg}
+            img="./images/react.jpg"
             title="React JS"
             subTitle="Learn react js"
           />
           <ProjectLink
-            img={ReduxJsImg}
+            img="./images/redux.jpg"
             title="Node JS"
             subTitle="Learn node js"
           />
@@ -103,192 +101,165 @@ function Home() {
             Popular posts <MdOutlineKeyboardArrowRight />
           </a>
         </button>
+      </div>
 
-        <style jsx>{`
-          .home {
-            width: 100%;
-          }
+      <style jsx>{`
+        .home {
+          width: 100%;
+        }
 
-          .apple-font {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-              Helvetica, Arial, sans-serif, "Apple Color Emoji",
-              "Segoe UI Emoji", "Segoe UI Symbol";
-            font-size: 16px;
-          }
+        .apple-font {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+            Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol";
+          font-size: 16px;
+        }
 
-          .title {
-            width: 100%;
-            text-align: center;
-            margin: 24px 0;
-            border-radius: 8px;
-            padding: 12px;
-          }
+        .title {
+          width: 100%;
+          text-align: center;
+          margin: 24px 0;
+          border-radius: 8px;
+          padding: 12px;
+        }
 
+        .profile-container {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .skill-title {
+          width: auto;
+          display: inline;
+        }
+
+        .profile-avatar {
+          display: inline;
+        }
+
+        .profile-avatar img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          border: white solid 2px;
+        }
+
+        .work-describe {
+          margin-top: 10px;
+        }
+
+        .describe-text {
+          text-align: justify;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+            Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol";
+          font-size: 16px;
+        }
+
+        .social-links {
+          margin-top: 25px;
+        }
+
+        .social-links ul {
+          list-style-type: none;
+        }
+
+
+
+        .section-title {
+          text-decoration: underline 4px rgb(82, 82, 82);
+          text-underline-offset: 6px;
+          font-family: "M PLUS Rounded 1c";
+          font-weight: 700;
+          font-size: 20px;
+          margin-top: 12px;
+          margin-bottom: 16px;
+        }
+
+        .portfolio-btn {
+          margin: auto;
+          height: 40px;
+          width: 147px;
+          border: none;
+          border-radius: 5px;
+          margin-top: 16px;
+          margin-bottom: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .portfolio-btn:hover {
+          opacity: 0.9;
+        }
+
+        .portfolio-btn a {
+          width: inherit;
+          height: inherit;
+          font-weight: 600;
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .bio-describe {
+          margin-top: 20px;
+          overflow-wrap: break-word;
+        }
+
+        .bio-item {
+          padding-left: 54.4px;
+          text-indent: -54.4px;
+        }
+
+        .bio-item-title {
+          font-weight: bold;
+          margin-right: 16px;
+        }
+
+        .i-love {
+          margin-top: 25px;
+        }
+
+        .project-links {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          width: 100%;
+          display: grid;
+          grid-gap: 24px;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        /* Media Quirites*/
+        @media (max-width: 795px) {
           .profile-container {
-            display: flex;
-            justify-content: space-between;
+            display: block;
           }
 
           .skill-title {
-            width: auto;
-            display: inline;
+            width: 100%;
+            display: block;
           }
 
           .profile-avatar {
-            display: inline;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
 
           .profile-avatar img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-            border: white solid 2px;
-          }
-
-          .work-describe {
-            margin-top: 10px;
-          }
-
-          .describe-text {
-            text-align: justify;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-              Helvetica, Arial, sans-serif, "Apple Color Emoji",
-              "Segoe UI Emoji", "Segoe UI Symbol";
-            font-size: 16px;
-          }
-
-          .section-title {
-            text-decoration: underline 4px rgb(82, 82, 82);
-            text-underline-offset: 6px;
-            font-family: "M PLUS Rounded 1c";
-            font-weight: 700;
-            font-size: 20px;
-            margin-top: 12px;
-            margin-bottom: 16px;
-          }
-
-          .portfolio-btn {
-            margin: auto;
-            height: 40px;
-            width: 147px;
-            border: none;
-            border-radius: 5px;
             margin-top: 16px;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
           }
+        }
 
-          .portfolio-btn:hover {
-            opacity: 0.9;
-          }
-
-          .portfolio-btn a {
-            width: inherit;
-            height: inherit;
-            font-weight: 600;
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
-          .bio-describe {
-            margin-top: 20px;
-            overflow-wrap: break-word;
-          }
-
-          .bio-item {
-            padding-left: 54.4px;
-            text-indent: -54.4px;
-          }
-
-          .bio-item-title {
-            font-weight: bold;
-            margin-right: 16px;
-          }
-
-          .i-love {
-            margin-top: 25px;
-          }
-
-          .social-links {
-            margin-top: 25px;
-          }
-
-          .social-links ul {
-            list-style-type: none;
-          }
-
-          .social-item a {
-            text-decoration: none;
-          }
-
-          .social-item-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0px 16px;
-            height: 40px;
-            cursor: pointer;
-            font-weight: 600;
-            border-radius: 6px;
-            border: none;
-            background: none;
-          }
-
-          .username {
-            outline: transparent solid 2px;
-            outline-offset: 2px;
-            text-underline-offset: 3px;
-            margin-left: 9px;
-          }
-
-          .social-item-btn:hover .username {
-            text-decoration: underline;
-          }
-
+        @media (max-width: 480px) {
           .project-links {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            width: 100%;
-            display: grid;
-            grid-gap: 24px;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: repeat(1, minmax(0, 1fr));
           }
-
-          /* Media Quirites*/
-          @media (max-width: 795px) {
-            .profile-container {
-              display: block;
-            }
-
-            .skill-title {
-              width: 100%;
-              display: block;
-            }
-
-            .profile-avatar {
-              width: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
-
-            .profile-avatar img {
-              margin-top: 16px;
-            }
-          }
-
-          @media (max-width: 480px) {
-            .project-links {
-              grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-          }
-        `}</style>
-      </div>
+        }
+      `}</style>
     </LayoutAimate>
   );
 }
@@ -300,15 +271,4 @@ const BioItem = ({ title, text }) => (
     <span className="bio-item-title">{title}</span>
     {text}
   </div>
-);
-
-const SocialItem = ({ icon, user, link }) => (
-  <li className="social-item">
-    <a href={link} target="_blank" rel="noreferrer">
-      <button className="social-item-btn apple-font">
-        {icon}
-        <span className="username apple-font">{user}</span>
-      </button>
-    </a>
-  </li>
 );
