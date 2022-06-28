@@ -1,13 +1,9 @@
 import LayoutAimate from "../components/LayoutAimate";
-import { Helmet } from "react-helmet";
 
 function _404() {
   return (
     <LayoutAimate title="_404">
       <div>
-        <Helmet>
-          <title>Error 404 - Abd Elhaid</title>
-        </Helmet>
         <br />
         <br />
         <br />
