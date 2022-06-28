@@ -99,6 +99,7 @@ function Navbar({ themeToggler, theme }) {
           backdrop-filter: blur(10px);
           display: flex;
           justify-content: center;
+          z-index:10;
         }
 
         .header-content {

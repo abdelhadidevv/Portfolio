@@ -41,10 +41,10 @@ function Home() {
         </div>
         <button className="portfolio-btn">
           <Link href="/works">
-            
-              My portfolio 
-              
-            
+            <a className="apple-font">
+              My portfolio <span>&nbsp;&nbsp;</span>
+              <MdOutlineKeyboardArrowRight />
+            </a>
           </Link>
         </button>
         <div className="bio-describe">
@@ -95,22 +95,21 @@ function Home() {
         </div>
         <div className="project-links">
           <ProjectLink
-            img="./images/react.jpg"
+            img="/images/react.jpg"
             title="React JS"
             subTitle="Learn react js"
           />
           <ProjectLink
-            img="./images/redux.jpg"
+            img="/images/redux.jpg"
             title="Node JS"
             subTitle="Learn node js"
           />
         </div>
         <button className="portfolio-btn" style={{ marginBottom: "0px" }}>
           <Link href="/posts">
-            
-Popular posts 
-
-            
+            <a className="apple-font">
+              Popular posts <MdOutlineKeyboardArrowRight />
+            </a>
           </Link>
         </button>
       </div>
@@ -169,34 +168,6 @@ Popular posts
           list-style-type: none;
         }
 
-        .social-item a {
-          text-decoration: none;
-        }
-
-        .social-item-btn {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          padding: 0px 16px;
-          height: 40px;
-          cursor: pointer;
-          font-weight: 600;
-          border-radius: 6px;
-          border: none;
-          background: none;
-        }
-
-        .username {
-          outline: transparent solid 2px;
-          outline-offset: 2px;
-          text-underline-offset: 3px;
-          margin-left: 9px;
-        }
-        .social-item-btn:hover .username {
-          text-decoration: underline;
-        }
-
         .section-title {
           text-decoration: underline 4px rgb(82, 82, 82);
           text-underline-offset: 6px;
@@ -237,16 +208,6 @@ Popular posts
         .bio-describe {
           margin-top: 20px;
           overflow-wrap: break-word;
-        }
-
-        .bio-item {
-          padding-left: 54.4px;
-          text-indent: -54.4px;
-        }
-
-        .bio-item-title {
-          font-weight: bold;
-          margin-right: 16px;
         }
 
         .i-love {
@@ -311,36 +272,14 @@ const BioItem = ({ title, text }) => (
         font-size: 16px;
       }
 
-      .social-links ul {
-        list-style-type: none;
+      .bio-item {
+        padding-left: 54.4px;
+        text-indent: -54.4px;
       }
 
-      .social-item a {
-        text-decoration: none;
-      }
-
-      .social-item-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0px 16px;
-        height: 40px;
-        cursor: pointer;
-        font-weight: 600;
-        border-radius: 6px;
-        border: none;
-        background: none;
-      }
-
-      .username {
-        outline: transparent solid 2px;
-        outline-offset: 2px;
-        text-underline-offset: 3px;
-        margin-left: 9px;
-      }
-      .social-item-btn:hover .username {
-        text-decoration: underline;
+      .bio-item-title {
+        font-weight: bold;
+        margin-right: 16px;
       }
     `}</style>
   </>

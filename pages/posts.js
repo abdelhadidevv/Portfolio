@@ -9,9 +9,9 @@ function Posts() {
         <div className="posts-projects">
           <PostItem img="/images/react.jpg" title="React JS" />
           <PostItem img="/images/redux.jpg" title="Redux JS" />
-        <PostItem img="/images/react.jpg" title="React JS" />
+          <PostItem img="/images/react.jpg" title="React JS" />
           <PostItem img="/images/redux.jpg" title="Redux JS" />
-        <PostItem img="/images/react.jpg" title="React JS" />
+          <PostItem img="/images/react.jpg" title="React JS" />
           <PostItem img="/images/redux.jpg" title="Redux JS" />
         </div>
       </div>

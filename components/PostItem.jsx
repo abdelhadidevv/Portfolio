@@ -1,8 +1,16 @@
+import Image from "next/image";
 
 function PostItem({ img, title }) {
   return (
     <div className="post-item">
-      <img src={img} alt={title} loading="lazy" />
+      <Image
+        style={{ borderRadius: "12px" }}
+        width={230}
+        height={128}
+        src={img}
+        alt={title}
+        loading="lazy"
+      />
       <p className="post-title">{title}</p>
       <style jsx>{`
         .post-item {
@@ -10,7 +18,7 @@ function PostItem({ img, title }) {
           overflow: hidden;
         }
 
-        .post-item img {
+        .post-item-img {
           margin: auto;
           display: block;
           width: 100%;

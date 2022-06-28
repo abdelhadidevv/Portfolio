@@ -1,8 +1,16 @@
+import Image from "next/image";
 
 function ProjectLink({ img, title, subTitle, isWork }) {
   return (
     <div className="project-link">
-      <img src={img} alt={title} loading="lazy" />
+      <Image
+        style={{ borderRadius: "12px" }}
+        width={230}
+        height={128}
+        src={img}
+        alt={title}
+        loading="lazy"
+      />
       <p className="project-title" style={isWork && { fontSize: "20px" }}>
         {title}
       </p>
