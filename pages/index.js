@@ -106,9 +106,12 @@ function Home() {
           />
         </div>
         <button className="portfolio-btn" style={{ marginBottom: "0px" }}>
-          <a href="/posts" className="apple-font" target="_self">
-            Popular posts <MdOutlineKeyboardArrowRight />
-          </a>
+          <Link href="/posts">
+            <a className="apple-font">
+Popular posts <MdOutlineKeyboardArrowRight />
+<a/>
+            
+          </Link>
         </button>
       </div>
 
