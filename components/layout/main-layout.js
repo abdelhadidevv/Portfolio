@@ -29,6 +29,9 @@ export default function MainLayout({ children }) {
       <Head>
         <link rel="icon" href="/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:site_name" content="Abd Elhadi" />
+        <meta name="og:title" content="Abd Elhadi" />
+        <meta property="og:type" content="website" />
         <meta name="description" content="Abd-Elhadi homepage" />
         <title>Abd Elhadi - Homepage</title>
       </Head>
