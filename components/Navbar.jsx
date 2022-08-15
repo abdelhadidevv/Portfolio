@@ -31,22 +31,20 @@ function Navbar({ themeToggler, theme }) {
             </div>
           </Link>
           <div className="links">
-            <Link href="/works" >
+            <Link href="/works">
               <a className="link-item">Works</a>
             </Link>
-            <Link href="/posts" >
-              
-                            <a className="link-item">Posts</a>
-
+            <Link href="/posts">
+              <a className="link-item">Posts</a>
             </Link>
             <a
-              href="https://github.com/"
+              href="https://github.com/abdelhadidevv"
               target="_blank"
               rel="noreferrer"
               className="link-item"
             >
               <IoLogoGithub className="github-icon" />
-              Source
+              Github
             </a>
           </div>
           <div className="actions-container">
@@ -99,7 +97,7 @@ function Navbar({ themeToggler, theme }) {
           backdrop-filter: blur(10px);
           display: flex;
           justify-content: center;
-          z-index:10;
+          z-index: 10;
         }
 
         .header-content {

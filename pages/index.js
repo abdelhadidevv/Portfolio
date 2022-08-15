@@ -74,13 +74,8 @@ function Home() {
           <ul>
             <SocialItem
               icon={<IoLogoGithub className="social-icon" />}
-              link="https://www.github.com/"
-              user="@abd_elhadi"
-            />
-            <SocialItem
-              icon={<BsInstagram />}
-              link="https://www.instagram.com/"
-              user="@abd_elhadi"
+              link="https://www.github.com/abdelhadidevv"
+              user="@abdelhadidevv"
             />
             <SocialItem
               icon={<BsFacebook />}
@@ -96,14 +91,16 @@ function Home() {
         </div>
         <div className="project-links">
           <ProjectLink
-            img="/images/react.jpg"
-            title="React JS"
-            subTitle="Learn react js"
+            img="/images/e_commerce.png"
+            title="E-commerce"
+            subTitle="e-commerce mead with Next JS"
+            link="https://ttech-store.vercel.app/"
           />
           <ProjectLink
-            img="/images/redux.jpg"
-            title="Node JS"
-            subTitle="Learn node js"
+            img="/images/landing_page.png"
+            title="Landing page"
+            subTitle="landing page with styled components"
+            link="https://construction-qq.netlify.app/"
           />
         </div>
         <button className="portfolio-btn" style={{ marginBottom: "0px" }}>

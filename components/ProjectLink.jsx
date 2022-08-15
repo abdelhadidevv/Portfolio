@@ -1,16 +1,22 @@
 import Image from "next/image";
+import Link from "next/link";
 
-function ProjectLink({ img, title, subTitle, isWork }) {
+function ProjectLink({ img, title, subTitle, isWork, link = "" }) {
   return (
     <div className="project-link">
-      <Image
-        style={{ borderRadius: "12px" }}
-        width={230}
-        height={128}
-        src={img}
-        alt={title}
-        loading="lazy"
-      />
+      <Link href={link} passHref>
+        <a target="_blank" rel="noopener noreferrer">
+          <Image
+            style={{ borderRadius: "12px" }}
+            width={230}
+            height={128}
+            src={img}
+            alt={title}
+            loading="lazy"
+          />
+        </a>
+      </Link>
+
       <p className="project-title" style={isWork && { fontSize: "20px" }}>
         {title}
       </p>
