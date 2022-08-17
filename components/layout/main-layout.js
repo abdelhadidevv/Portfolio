@@ -33,6 +33,7 @@ export default function MainLayout({ children }) {
         <meta name="og:title" content="Abd Elhadi" />
         <meta property="og:type" content="website" />
         <meta name="description" content="Abd-Elhadi homepage" />
+        <meta name="google-site-verification" content="......." />
         <title>Abd Elhadi - Homepage</title>
       </Head>
       <ThemeProvider theme={theme ? darkTheme : lightTheme}>
