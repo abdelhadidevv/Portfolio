@@ -4,15 +4,14 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "../themes.js";
 import Navbar from "../Navbar";
 import AnimatedRoutes from "../AnimatedRoutes";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function MainLayout({ children }) {
-  const [theme, setTheme] = useState(null);  
+  const [theme, setTheme] = useState(null);
 
   useEffect(() => {
-   setTheme(localStorage.getItem("dark-mode")  === "true" ? true : false)
+    setTheme(localStorage.getItem("dark-mode") === "true" ? true : false);
   }, [theme]);
-
 
   const themeToggler = () => {
     if (theme === false) {
@@ -33,7 +32,10 @@ export default function MainLayout({ children }) {
         <meta name="og:title" content="Abd Elhadi" />
         <meta property="og:type" content="website" />
         <meta name="description" content="Abd-Elhadi homepage" />
-        <meta name="google-site-verification" content="......." />
+        <meta
+          name="google-site-verification"
+          content="m2d3ysraCe-PQzzh62wnUIfM_aWgJkPZpkvABcyjIPw"
+        />
         <title>Abd Elhadi - Homepage</title>
       </Head>
       <ThemeProvider theme={theme ? darkTheme : lightTheme}>
