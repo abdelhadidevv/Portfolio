@@ -99,4 +99,8 @@ export const GlobalStyles = createGlobalStyle`
   .craftz:hover{
     background:  ${(props) => props.theme.socialButtonHover};
   }
+  .skill-item{
+    background:  ${(props) => props.theme.socialButtonHover};
+
+  }
 `;

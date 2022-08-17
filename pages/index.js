@@ -1,5 +1,5 @@
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { BsInstagram, BsFacebook } from "react-icons/bs";
+import { BsFacebook } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { IoLogoGithub } from "react-icons/io5";
 import getAge from "../lib/age";
@@ -19,7 +19,7 @@ function Home() {
           <div className="skill-title">
             <h1>Abd Elhadi</h1>
             <p className="apple-font">
-              Programming ( Web / Android ) Developer
+              Programming ( ReactJS / NodeJS ) Developer
             </p>
           </div>
           <div className="profile-avatar">
@@ -28,16 +28,17 @@ function Home() {
               width={100}
               height={100}
               src="/images/avatar.jpg"
-              alt=""
+              objectFit="cover"
+              alt="avatar"
             />
           </div>
         </div>
         <div className="work-describe">
-          <p className="section-title">Work</p>
+          <p className="section-title">About Me</p>
           <p className="describe-text">
-            Hello my name Abd Elhadi and I am {getAge("2000-04-20")} years ago
-            and I am an android developer and I am an React JS developer, I want
-            to become Full-Stack-Developer with React end of the 2022.
+            Hello ,I am Abd Elhadi and I am {getAge("2000-04-20")} years ago and
+            I am an React JS developer, I have vary good experience with React
+            and Javascript
           </p>
         </div>
         <button className="portfolio-btn">
@@ -52,16 +53,43 @@ function Home() {
           <p className="section-title">Bio</p>
           <BioItem
             title="2018"
-            text="Start study programming and databases in UCAS."
+            text="Start study programming and databases in University College of Applied Sciences."
           />
           <BioItem
-            title="2020"
+            title="2020/4"
             text="Complete the diploma in programming and databases."
+          />
+          <BioItem
+            title="2020/5"
+            text="I work as Android Developer and end in 2020/11."
           />
           <BioItem
             title="2021/11"
             text="Start learning Html, CSS, Javascript, ES6, DOM, React JS, Hooks, Redux, MUI and more."
           />
+        </div>
+        <div className="skills">
+          <p className="section-title">Skills</p>
+          <div className="skills-list">
+            <p className="skill-item">ReactJS</p>
+            <p className="skill-item">NextJS</p>
+            <p className="skill-item">Javascript ES6</p>
+            <p className="skill-item">NextAuth</p>
+            <p className="skill-item">Redux</p>
+            <p className="skill-item">Redux toolkit</p>
+            <p className="skill-item">Styled Components</p>
+            <p className="skill-item">Tailwind CSS</p>
+            <p className="skill-item">Material UI</p>
+            <p className="skill-item">React Router DOM</p>
+            <p className="skill-item">Responsive Website</p>
+            <p className="skill-item">Support SEO</p>
+            <p className="skill-item">React Helmet</p>
+            <p className="skill-item">Knowledge UX</p>
+            <p className="skill-item">HTML</p>
+            <p className="skill-item">HTML5</p>
+            <p className="skill-item">CSS</p>
+            <p className="skill-item">CSS3</p>
+          </div>
         </div>
         <div className="i-love">
           <p className="section-title">I ♥</p>
@@ -206,6 +234,27 @@ function Home() {
         .bio-describe {
           margin-top: 20px;
           overflow-wrap: break-word;
+        }
+        .skills {
+          display: flex;
+          flex-direction: column;
+        }
+        .skills-list {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px;
+        }
+        .skill-item {
+          border: none;
+          border-radius: 20px;
+          padding: 0px 4px;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+            Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol";
+          font-size: 14px;
+          font-weight: 500;
+          color:#319795;
         }
 
         .i-love {
